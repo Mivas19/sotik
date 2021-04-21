@@ -1,5 +1,106 @@
 @media screen and (max-width: 992px)
+    .up
+        display: none
     .header
         &_grid
             grid-template-columns: repeat(2, minmax(180px, 220px))
             grid-template-rows: repeat(2, 300px)
+        &_list
+            .li
+                &:nth-child(1)
+                    margin-left: 2vw
+                    margin-top: 90px
+    .fat-nav ul
+        vertical-align: top  
+    .container
+        display: none
+    .hamburger
+        margin: 40px 12px 12px 30px
+        background: linear-gradient(45deg, #6495ed, #7b68ee)
+        height: 40px
+        border-radius: 5px
+    .hamburger .hamburger__icon, 
+    .hamburger .hamburger__icon:before, 
+    .hamburger .hamburger__icon:after 
+        background-color: #fff
+        mix-blend-mode: invert(100%)  
+    .header_list__help
+        width: 83px
+    .nav-item
+        margin-top: -10px   
+    .sotik_grid__item1
+        width: 400px
+@media screen and (min-width: 992px)
+    .hamburger .hamburger__icon, 
+    .hamburger .hamburger__icon:before, 
+    .hamburger .hamburger__icon:after 
+        display: none
+@media screen and (max-width: 640px)
+    .novosti_grids
+        grid-template-columns: minmax(150px, 1200px)
+    .sotik
+        &_button
+            margin: 37px auto 60px auto
+            display: block
+        &_buttons
+            margin: 40px auto 0 auto
+            display: block
+        &_grid
+            gap: 10px
+            &:nth-child(1)
+                grid-template-columns: 0 553px
+            &:nth-child(2)
+                margin-left: 0
+            &__item1
+                width: 60vw
+            &__item3, &__item2
+                width: 95vw
+            &__item2
+                h3
+                    text-align: center
+                &___text
+                    text-align: center
+    .item3
+        margin-left: 10px
+    .header_phone
+        width: 500px
+        top: 560px
+    .header
+        &_grid
+            grid-template-columns: repeat(1, minmax(180px, 220px))
+            grid-template-rows: repeat(4, 300px)
+@media screen and (max-width: 480px)
+    .novosti
+        height: 600px
+    .header_phone 
+        width: 105vw
+        top: 600px
+    .header_player__text
+        display: none
+    .sotik_grid
+        &:nth-child(2)
+            margin-top: 60px
+    .header_zagalovok .title
+        padding: 0 0 0 30px
+@media screen and ( max-width: 400px )
+    .header_phone
+        top: 640px
+    .karta
+        min-height: 660px
+        &_ukaz
+            height: 400px
+    .novosti_button
+        margin-top: 25px
+@media screen and ( max-width: 336px )
+    .sotik_grid
+        &:nth-child(2)
+             margin-top: 150px
+            
+    
+    
+            
+                
+    
+
+    
+    

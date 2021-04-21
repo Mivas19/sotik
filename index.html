@@ -10,29 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./jquery.fatNav.min.css">
     <link rel="stylesheet" href="./style.min.css">
 </head>
 <body oncopy="return false">
-    <header class="header">
+    <header id="home" class="header">
         <div class="header_back">
-            <div class="header_zagalovok">
+            <div class="fat-nav">
+                <div class="fat-nav__wrapper">
+                    <ul id="menu" class="header_list">
+                        <li class="li"><a class="nav-item" href="#home">Домой</a></li>
+                        <li class="li"><a class="nav-item" href="#novosti">Новости</a></li>
+                        <li class="li"><a class="nav-item" href="#we">Про нас</a></li>
+                        <li class="li"><a class="nav-item" href="#karta">Карта</a></li>
+                        <li class="li"><a class="nav-item" href="#quality">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_zagalovok">               
                 <div class="title"><a href="#">сотик</a></div>
                 <div class="container">
-                    <nav class="nav">
-                        <span id="trigger" class="trigger">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </span>
+                    <div class="nav">
                         <ul id="menu" class="header_list">
-                            <li class="li"><a class="nav-item" href="#">Домой</a></li>
-                            <li class="li"><a class="nav-item" href="#">Новости</a></li>
-                            <li class="li"><a class="nav-item" href="#">Про нас</a></li>
-                            <li class="li"><a class="nav-item" href="#">Карта</a></li>
-                            <li class="li header_list__help"><a href="#popup" class="nav-item">Помочь</a></li>
-                            <li class="li"><a class="nav-item" href="#">Контакты</a></li>
+                            <li class="li"><a class="nav-item" href="#home">Домой</a></li>
+                            <li class="li"><a class="nav-item" href="#novosti">Новости</a></li>
+                            <li class="li"><a class="nav-item" href="#we">Про нас</a></li>
+                            <li class="li"><a class="nav-item" href="#karta">Карта</a></li>
+                            <li class="li"><a class="nav-item" href="#quality">Контакты</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
                 <button class="header_zagalovok__button header_zagalovok__button2">
                     <span>отправить заявку</span>
@@ -99,7 +105,7 @@
         </div>
         <button class="header_zagalovok__button header_button">отправить заявку</button>
     </section>
-    <section class="novosti">
+    <section id="novosti" class="novosti">
         <h2 class="novosti_title">Технологические новости</h2>
         <h3 class="novosti_subtitle">
             новости связанные с новыми технологиями, открытиями и<p>
@@ -126,21 +132,21 @@
         </div>
         <a target="_blank" class="novosti_ssilka" href="https://4pda.ru/"><button class="header_zagalovok__button novosti_button">посмотреть все</button></a>
     </section>
-    <section class="sotik">
+    <section id="we" class="sotik">
         <div class="sotik_grid">
             <img src="./img/7.png" alt="" class="sotik_grid__item sotik_grid__item1">
             <div class="sotik_grid__item sotik_grid__item2">
                 <h3 class="sotik_grid__item2___title">Почему выбирают сотик?</h3>
                 <div class="sotik_grid__item2___text">Сотик - это место, где качество каждого сделанного устройства для нас важно.</div>
                 <div class="sotik_grid__item2___flex">
-                    <img src="/img/8.png" alt="mnogogran">
+                    <img src="./img/8.png" alt="mnogogran">
                     <div class="sotik_grid__item2___flex____column">
                         <h4>15 лет на рынке</h4>
                         <div class="sotik_grid__item2___flex____column_____text">За более 15 лет существования на рынке, наши мастера отремонтировали тысячи устройств</div>
                     </div>
                 </div>
                 <div class="sotik_grid__item2___flex">
-                    <img src="/img/9.png" alt="kub">
+                    <img src="./img/9.png" alt="kub">
                     <div class="sotik_grid__item2___flex____column">
                         <h4>Новейшие технологии</h4>
                         <div class="sotik_grid__item2___flex____column_____text">Мы занимаемся ремонтом техники с использованием новейших
@@ -156,7 +162,7 @@
                 <div class="sotik_grid__item2___text">Мы заботимся о своей репутации, поэтому нам так важна обратная связь от каждого нашего клиента!
                     Отзывы взяты с сайта <a target="_blank" href="https://krasnodar.zoon.ru/">zoon.ru</a></div>
                 <div class="sotik_grid__item2___flex">
-                    <img src="/img/11.png" alt="mnogogran">
+                    <img src="./img/11.png" alt="mnogogran">
                     <div class="sotik_grid__item2___flex____column">
                         <h4>Ирина Г.</h4>
                         <div class="sotik_grid__item2___flex____column_____text">
@@ -165,7 +171,7 @@
                     </div>
                 </div>
                 <div class="sotik_grid__item2___flex">
-                    <img src="/img/12.png" alt="kub">
+                    <img src="./img/12.png" alt="kub">
                     <div class="sotik_grid__item2___flex____column">
                         <h4>Дмитрий Д.</h4>
                         <div class="sotik_grid__item2___flex____column_____text">
@@ -178,31 +184,12 @@
             <img src="./img/10.png" alt="" class="sotik_grid__item sotik_grid__item1">
         </div>        
     </section>
-    <section class="karta">
+    <section id="karta" class="karta">
         <h2>Где мы находимся?</h2>
         <div class="karta_title">На данный момент у нас главный офис в г. Елец и второй в г. Краснодар</div>
         <iframe class="karta_ukaz" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.9896925898!2d38.48996561577929!3d52.624030379834025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41308835081a9373%3A0xb99de5119e63ea65!2z0KHQvtGC0LjQug!5e0!3m2!1sru!2sru!4v1618739646813!5m2!1sru!2sru" width="70%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
-    <section id="popup" class="dar mfp-hide">
-        <div class="dar_opisanie">
-            <div class="dar_opisanie__header">
-                <img src="./img/14.png" alt="teygolka" class="dar_opisanie__photo">
-                <h4>чтобы мы могли вас радовать все больше и больше</h4>
-                <div class="dar_opisanie__header___subtitle">Дарение осуществляется через платежную систему QIWI, перевод денег защищен</div>
-            </div>
-            <div class="dar_opisanie__perevod">
-                <h4 class="dar_opisanie__perevod___title">На развитие наших офисов в других городах</h4>
-                <div class="dar_opisanie__perevod___widjet"><iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9D%D0%B0%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5%20%D0%A1%D0%BE%D1%82%D0%B8%D0%BA%D0%B0&targets-hint=&default-sum=100&button-text=13&payment-type-choice=on&mobile-payment-type-choice=on&fio=on&hint=&successURL=&quickpay=shop&account=4100116674556371" width="720" height="200" frameborder="0" allowtransparency="true" scrolling="no"></iframe></div>
-            </div>
-            <div class="dar_logo">
-                <img src="./img/15.png" alt="QIWI">
-                <img src="./img/16.png" alt="Mastercard">
-                <img src="./img/17.png" alt="Visa">
-                <img src="./img/18.png" alt="Mir">
-            </div>
-        </div>
-    </section>
-    <section class="quality">
+    <section id="quality" class="quality">
         <h2>Качество для нас <span>важно</span></h2>
         <div class="quality_subtitle">Мы держим самую высокую планку качества и скорости выполнения работы</div>
         <button class="header_zagalovok__button quality_button">
@@ -222,9 +209,11 @@
         <div class="footer_statia">Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) ГK РФ.</div>
         <div class="footer_sogl"><a href="">Персональное соглашение</a></div>
     </footer>
+    <div id="button-up"><img class="up" src="./img/up.png" alt=""></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./dist/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./jquery.fatNav.min.js"></script>
     <script src="./javascript.js"></script>
 </body>
 </html>
