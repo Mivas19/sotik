@@ -1,0 +1,83 @@
+body
+    width: 100%
+.sotik
+    &_grid
+        display: grid
+        grid-template-columns: 719px 553px
+        grid-template-rows: 680px
+        gap: 50px
+        &:nth-child(1)
+            margin-top: 0 
+            grid-template-rows: 630px
+            grid-template-columns: minmax(0, 719px) 553px
+        &:nth-child(2)
+            grid-template-columns: minmax(0, 719px) 719px
+        &__item1
+            width: 615px
+            margin-top: 55px
+            margin-left: 71px
+        &__item2
+            margin-top: 138px
+            background-color: rgba(265, 265, 265, 0.7)
+            padding: 10px
+            border-radius: 5px
+            h3
+                object-fit: contain
+                font-family: Archive
+                font-size: 28px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                color: #2f2f33
+            &___text
+                object-fit: contain
+                font-family: Myriad Pro
+                font-size: 18px
+                font-weight: 600
+                font-stretch: normal
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                color: #323232
+            &___flex
+                display: flex
+                img
+                    margin-top: 63px
+                    width: 10%
+                    height: 10%
+                &____column
+                    margin-top: 55px
+                    margin-left: 15px
+                    h4
+                        object-fit: contain
+                        font-family: Archive
+                        font-size: 22px
+                        font-weight: normal
+                        font-stretch: normal
+                        font-style: normal
+                        letter-spacing: normal
+                        text-align: left
+                        color: #2f2f33
+                    &_____text
+                        object-fit: contain
+                        font-family: Myriad Pro
+                        font-size: 17px
+                        font-weight: 600
+                        font-stretch: normal
+                        font-style: normal
+                        letter-spacing: normal
+                        text-align: left
+                        color: #323232
+    &_button
+        margin: 37px 0 60px 0  
+    &_buttons
+        margin-top: 40px
+.item3
+    width: 553px
+    margin-left: 12vw
+    margin-top: 100px
+    background-color: rgba(265, 265, 265, 0.7)
+    z-index: 100
+    border-radius: 5px

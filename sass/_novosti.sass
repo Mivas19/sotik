@@ -1,0 +1,100 @@
+.novosti 
+    height: 550px
+    background-color: #1c1d29  
+    &_title
+        padding-top: 65px
+        object-fit: contain
+        font-family: Archive
+        font-size: 30px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        letter-spacing: normal
+        text-align: center
+        color: #ffffff
+    h3
+        object-fit: contain
+        font-family: Archive
+        font-size: 16px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        letter-spacing: normal
+        text-align: center
+        color: #ffffff
+    &_grids
+        display: grid
+        grid-template-columns: 100px minmax(700px, 1200px) 100px
+        gap: 23px
+        justify-content: center
+        margin-top: 39px
+        height: 220px
+        &__item
+            border-radius: 5px
+            background-color: #777777
+            position: relative
+            transition: 0.2s all
+            height: 150px
+            margin-right: 15px
+            margin-left: 15px
+            &:hover
+                box-shadow: 0 0 17px rgba(0,0,0,0.6)
+                .novosti_grids__item___text
+                    color: #6b37be
+            &___text
+                position: absolute
+                top: 103%
+                object-fit: contain
+                font-family: Roboto
+                font-size: 14px
+                font-weight: 500
+                font-stretch: normal
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                color: #ffffff   
+                transition: 0.2s all
+        &__item1
+            background: url(./img/r.jpg) center center/cover no-repeat
+            height: 150px
+        &__item2
+            background: url(./img/g.png) center center/cover no-repeat
+        &__item3
+            background: url(./img/n.png) center center/cover no-repeat
+        &__item4
+            background: url(./img/v.jpg) center center/cover no-repeat
+        &__item5
+            background: url(./img/1d.jpg) center center/cover no-repeat
+        &__item6
+            background: url(./img/v2.jpg) center center/cover no-repeat
+    &_ssilka
+        text-decoration: none
+    &_button
+        display: block
+        margin: 0 auto
+        margin-top: 35px
+.prev
+    margin-top: 75%
+    height: 40px
+    width: 40px
+    margin-left: 60%
+    cursor: pointer
+    &:hover
+            img
+                width: 35px
+    img
+        width: 30px
+        transition: 0.2s all
+.next
+    margin-top: 75%
+    height: 40px
+    width: 40px
+    margin-left: 10%
+    cursor: pointer
+    text-align: center
+    &:hover
+            img
+                width: 35px
+    img
+        width: 30px
+        transition: 0.2s all
