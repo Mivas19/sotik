@@ -54,3 +54,8 @@ scrollTop: 0
 return false;
 });		 
 });
+
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true
+});
