@@ -59,5 +59,3 @@ $('.open-popup-link').magnificPopup({
   type:'inline',
   midClick: true
 });
-
-document.addEventListener('touchstart', onTouchStart, {passive: true});
